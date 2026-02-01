@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Agent Evaluation System - Ryan Cooper</title>
+  <style>
+    :root {
+      --bg-primary: #ffffff;
+      --bg-secondary: #f5f5f5;
+      --text-primary: #1a1a1a;
+      --text-secondary: #666666;
+      --accent: #3b82f6;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: var(--text-primary);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    header {
+      margin-bottom: 3rem;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    h2 {
+      font-size: 1.8rem;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--text-primary);
+    }
+
+    h3 {
+      font-size: 1.3rem;
+      margin-top: 2rem;
+      margin-bottom: 0.75rem;
+      color: var(--text-primary);
+    }
+
+    p, li {
+      color: var(--text-secondary);
+      margin-bottom: 1rem;
+      font-size: 1.1rem;
+    }
+
+    ul {
+      margin-left: 2rem;
+      margin-bottom: 1.5rem;
+    }
+
+    li {
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: var(--accent);
+      text-decoration: none;
+      transition: opacity 0.2s;
+    }
+
+    a:hover {
+      opacity: 0.8;
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-bottom: 2rem;
+      font-weight: 500;
+    }
+
+    code {
+      background-color: var(--bg-secondary);
+      padding: 0.2rem 0.4rem;
+      border-radius: 3px;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95em;
+    }
+
+    .highlight {
+      background-color: var(--bg-secondary);
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin: 1.5rem 0;
+      border-left: 4px solid var(--accent);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back-link">← Back to Home</a>
+
+    <header>
+      <h1>AI Agent Evaluation System</h1>
+      <p style="color: var(--text-secondary); font-size: 1.1rem;">
+        A comprehensive framework for evaluating AI agent performance
+      </p>
+    </header>
+
+    <main>
+      <section>
+        <h2>Overview</h2>
+        <p>
+          As AI agents become more sophisticated and are deployed in increasingly complex
+          environments, the need for robust evaluation systems becomes critical. This research
+          explores methodologies for systematically assessing agent behavior, performance, and
+          reliability.
+        </p>
+      </section>
+
+      <section>
+        <h2>Key Challenges</h2>
+        <ul>
+          <li>
+            <strong>Non-determinism:</strong> AI agents often exhibit stochastic behavior,
+            making traditional testing approaches insufficient
+          </li>
+          <li>
+            <strong>Multi-dimensional Performance:</strong> Success cannot be measured by a
+            single metric; agents must be evaluated across multiple axes
+          </li>
+          <li>
+            <strong>Environment Complexity:</strong> Real-world deployments involve complex,
+            dynamic environments that are difficult to replicate in testing
+          </li>
+          <li>
+            <strong>Long-term Behavior:</strong> Agent performance may degrade or change over
+            extended operation periods
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Proposed Framework</h2>
+
+        <h3>1. Multi-dimensional Metrics</h3>
+        <p>
+          Rather than relying on single scores, the evaluation system tracks:
+        </p>
+        <ul>
+          <li>Task completion rate and accuracy</li>
+          <li>Resource efficiency (compute, memory, API calls)</li>
+          <li>Response latency and throughput</li>
+          <li>Error recovery and graceful degradation</li>
+          <li>Adherence to constraints and safety guidelines</li>
+        </ul>
+
+        <h3>2. Scenario-Based Testing</h3>
+        <p>
+          Agents are evaluated across diverse scenarios that test different capabilities:
+        </p>
+        <div class="highlight">
+          <p><strong>Example Scenarios:</strong></p>
+          <ul style="margin-bottom: 0;">
+            <li>Standard operation: Baseline performance measurement</li>
+            <li>Edge cases: Handling unusual or malformed inputs</li>
+            <li>Adversarial conditions: Resistance to manipulation</li>
+            <li>Resource constraints: Performance under limited resources</li>
+            <li>Multi-turn interactions: Maintaining context and consistency</li>
+          </ul>
+        </div>
+
+        <h3>3. Automated Test Generation</h3>
+        <p>
+          The system automatically generates test cases based on:
+        </p>
+        <ul>
+          <li>Historical failure patterns</li>
+          <li>Known edge cases in the problem domain</li>
+          <li>Combinatorial testing of input parameters</li>
+          <li>Adversarial example generation</li>
+        </ul>
+
+        <h3>4. Continuous Monitoring</h3>
+        <p>
+          Evaluation isn't a one-time process. The framework includes continuous monitoring
+          to detect:
+        </p>
+        <ul>
+          <li>Performance drift over time</li>
+          <li>Emerging failure modes</li>
+          <li>Changes in behavior patterns</li>
+          <li>Resource usage anomalies</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Implementation Considerations</h2>
+        <p>
+          Building practical evaluation systems requires careful attention to:
+        </p>
+        <ul>
+          <li>
+            <strong>Reproducibility:</strong> Ensuring test results can be reliably reproduced
+            despite non-deterministic agent behavior
+          </li>
+          <li>
+            <strong>Scalability:</strong> Evaluation systems must handle high volumes of tests
+            efficiently
+          </li>
+          <li>
+            <strong>Interpretability:</strong> Results must be presented in ways that enable
+            actionable insights
+          </li>
+          <li>
+            <strong>Integration:</strong> Seamless integration with existing development and
+            deployment workflows
+          </li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Future Directions</h2>
+        <p>
+          This research continues to evolve, with ongoing work in:
+        </p>
+        <ul>
+          <li>Developing standardized benchmarks for agent evaluation</li>
+          <li>Creating tools for automated regression detection</li>
+          <li>Exploring methods for evaluating emergent agent behaviors</li>
+          <li>Building frameworks for comparative evaluation across different agent architectures</li>
+        </ul>
+      </section>
+
+      <section style="margin-top: 3rem; padding-top: 2rem; border-top: 1px solid var(--bg-secondary);">
+        <a href="/" class="back-link">← Back to Home</a>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

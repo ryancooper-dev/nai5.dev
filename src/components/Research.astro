@@ -1,19 +1,88 @@
 ---
 ---
 
-<section id="research" class="py-16 md:py-24 px-6">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-[var(--text-primary)] tracking-tight">
-      Research
-    </h2>
-    <p class="text-lg md:text-xl text-[var(--text-secondary)] mb-8 leading-relaxed max-w-3xl">
-      AI agent evaluation, automated testing, human-AI collaboration.
-    </p>
-    <a href="/research/agent-eval-system.html" class="inline-flex items-center gap-2 text-[var(--accent)] hover:text-[var(--accent-hover)] font-medium transition-colors group">
-      <span>Read: AI Agent Evaluation Systems</span>
-      <svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
-      </svg>
-    </a>
+<section id="research" class="relative py-32 px-6 border-t border-[var(--border)]">
+  <div class="max-w-6xl mx-auto">
+    <!-- Section header -->
+    <div class="mb-20">
+      <div class="flex items-center gap-6 mb-6">
+        <span class="mono text-sm text-[var(--accent)] uppercase tracking-wider">[03]</span>
+        <h2 class="text-5xl md:text-6xl font-bold text-[var(--text-primary)]">RESEARCH</h2>
+      </div>
+      <div class="h-[2px] w-24 bg-[var(--accent)]"></div>
+    </div>
+
+    <!-- Research areas -->
+    <div class="grid md:grid-cols-3 gap-8 mb-16">
+      <div class="border-l-2 border-[var(--accent)] pl-6">
+        <h3 class="mono text-sm text-[var(--accent)] uppercase tracking-wider mb-3">Focus Area 01</h3>
+        <p class="text-lg text-[var(--text-secondary)]">AI Agent Evaluation</p>
+      </div>
+      <div class="border-l-2 border-[var(--accent)] pl-6">
+        <h3 class="mono text-sm text-[var(--accent)] uppercase tracking-wider mb-3">Focus Area 02</h3>
+        <p class="text-lg text-[var(--text-secondary)]">Automated Testing</p>
+      </div>
+      <div class="border-l-2 border-[var(--accent)] pl-6">
+        <h3 class="mono text-sm text-[var(--accent)] uppercase tracking-wider mb-3">Focus Area 03</h3>
+        <p class="text-lg text-[var(--text-secondary)]">Human-AI Collaboration</p>
+      </div>
+    </div>
+
+    <!-- Featured paper -->
+    <div class="relative border-2 border-[var(--border)] bg-[var(--bg-secondary)] p-8 md:p-12 hover:border-[var(--accent)] transition-all group">
+      <!-- Featured badge -->
+      <div class="absolute -top-4 left-8">
+        <span class="mono text-xs px-4 py-2 bg-[var(--accent)] text-[var(--bg-primary)] uppercase tracking-wider">Featured</span>
+      </div>
+
+      <div class="space-y-6">
+        <div>
+          <h3 class="text-2xl md:text-3xl font-bold text-[var(--text-primary)] mb-4">
+            AI Agent Evaluation Systems
+          </h3>
+          <p class="text-lg text-[var(--text-secondary)] leading-relaxed max-w-3xl">
+            Exploring methodologies and frameworks for evaluating AI agent performance,
+            reliability, and safety in production environments. Focusing on automated
+            testing strategies and benchmarking approaches.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <span class="mono text-xs px-3 py-1 border border-[var(--border)] text-[var(--text-tertiary)]">AI Agents</span>
+          <span class="mono text-xs px-3 py-1 border border-[var(--border)] text-[var(--text-tertiary)]">Evaluation</span>
+          <span class="mono text-xs px-3 py-1 border border-[var(--border)] text-[var(--text-tertiary)]">Testing</span>
+          <span class="mono text-xs px-3 py-1 border border-[var(--border)] text-[var(--text-tertiary)]">Benchmarks</span>
+        </div>
+
+        <div class="pt-4">
+          <a href="/research/agent-eval-system.html"
+             class="inline-flex items-center gap-3 px-8 py-4 border-2 border-[var(--border)] bg-[var(--bg-primary)] hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--bg-primary)] transition-all group/link">
+            <span class="mono text-sm font-bold uppercase">Read Full Paper</span>
+            <svg class="w-5 h-5 transform group-hover/link:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Decorative corner -->
+      <div class="absolute bottom-0 right-0 w-24 h-24 border-l-2 border-t-2 border-[var(--border)] opacity-20"></div>
+    </div>
+
+    <!-- Additional info -->
+    <div class="mt-16 p-8 border border-[var(--border)] bg-[var(--bg-tertiary)]">
+      <div class="flex items-start gap-4">
+        <div class="w-2 h-2 bg-[var(--accent)] mt-2"></div>
+        <div>
+          <p class="text-[var(--text-secondary)] leading-relaxed">
+            Currently researching novel approaches to AI agent reliability and safety.
+            Interested in collaborating on evaluation frameworks and testing methodologies.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <!-- Decorative element -->
+  <div class="absolute top-40 right-20 w-64 h-64 border border-[var(--border)] opacity-10 pointer-events-none rotate-12"></div>
 </section>

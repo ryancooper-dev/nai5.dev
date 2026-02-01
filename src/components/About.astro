@@ -1,21 +1,99 @@
 ---
 ---
 
-<section id="about" class="py-16 md:py-24 px-6">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-bold mb-8 text-[var(--text-primary)] tracking-tight">
-      About
-    </h2>
-    <p class="text-lg md:text-xl text-[var(--text-secondary)] mb-10 leading-relaxed max-w-3xl">
-      Full-stack engineer specializing in AI tools and infrastructure.
-      From low-level system architecture to high-level AI agent frameworks.
-    </p>
-    <div class="flex flex-wrap gap-3">
-      <span class="px-4 py-2 bg-[var(--bg-elevated)] border border-[var(--border-subtle)] rounded-lg text-sm text-[var(--text-secondary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all">Golang</span>
-      <span class="px-4 py-2 bg-[var(--bg-elevated)] border border-[var(--border-subtle)] rounded-lg text-sm text-[var(--text-secondary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all">Rust</span>
-      <span class="px-4 py-2 bg-[var(--bg-elevated)] border border-[var(--border-subtle)] rounded-lg text-sm text-[var(--text-secondary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all">TypeScript</span>
-      <span class="px-4 py-2 bg-[var(--bg-elevated)] border border-[var(--border-subtle)] rounded-lg text-sm text-[var(--text-secondary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all">System Architecture</span>
-      <span class="px-4 py-2 bg-[var(--bg-elevated)] border border-[var(--border-subtle)] rounded-lg text-sm text-[var(--text-secondary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all">AI Infrastructure</span>
+<section id="about" class="relative py-32 px-6 border-t border-[var(--border)]">
+  <div class="max-w-6xl mx-auto">
+    <!-- Section header -->
+    <div class="mb-20">
+      <div class="flex items-center gap-6 mb-6">
+        <span class="mono text-sm text-[var(--accent)] uppercase tracking-wider">[01]</span>
+        <h2 class="text-5xl md:text-6xl font-bold text-[var(--text-primary)]">ABOUT</h2>
+      </div>
+      <div class="h-[2px] w-24 bg-[var(--accent)]"></div>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-16 items-start">
+      <!-- Left: Description -->
+      <div class="space-y-8">
+        <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-light leading-relaxed">
+          Full-stack engineer specializing in AI tools and infrastructure.
+        </p>
+        <p class="text-lg text-[var(--text-tertiary)] leading-relaxed">
+          From low-level system architecture to high-level AI agent frameworks,
+          I build software that bridges the gap between complex technical systems
+          and practical user needs.
+        </p>
+        <div class="pt-4">
+          <div class="flex items-center gap-3 text-[var(--text-secondary)]">
+            <div class="w-2 h-2 bg-[var(--accent)]"></div>
+            <span class="mono text-sm">Currently building AI infrastructure at scale</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: Tech stack -->
+      <div class="space-y-8">
+        <div>
+          <h3 class="mono text-sm text-[var(--accent)] uppercase tracking-wider mb-6">Core Technologies</h3>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="group border border-[var(--border)] p-4 hover:border-[var(--accent)] transition-all hover-lift">
+              <div class="mono text-lg font-bold text-[var(--text-primary)] mb-1">Golang</div>
+              <div class="text-xs text-[var(--text-tertiary)]">Backend / Systems</div>
+            </div>
+            <div class="group border border-[var(--border)] p-4 hover:border-[var(--accent)] transition-all hover-lift">
+              <div class="mono text-lg font-bold text-[var(--text-primary)] mb-1">Rust</div>
+              <div class="text-xs text-[var(--text-tertiary)]">Performance / Safety</div>
+            </div>
+            <div class="group border border-[var(--border)] p-4 hover:border-[var(--accent)] transition-all hover-lift">
+              <div class="mono text-lg font-bold text-[var(--text-primary)] mb-1">TypeScript</div>
+              <div class="text-xs text-[var(--text-tertiary)]">Frontend / Node</div>
+            </div>
+            <div class="group border border-[var(--border)] p-4 hover:border-[var(--accent)] transition-all hover-lift">
+              <div class="mono text-lg font-bold text-[var(--text-primary)] mb-1">Python</div>
+              <div class="text-xs text-[var(--text-tertiary)]">ML / AI</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="mono text-sm text-[var(--accent)] uppercase tracking-wider mb-6">Specializations</h3>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between border-b border-[var(--border)] pb-3">
+              <span class="text-[var(--text-secondary)]">System Architecture</span>
+              <div class="flex gap-1">
+                <div class="w-2 h-2 bg-[var(--accent)]"></div>
+                <div class="w-2 h-2 bg-[var(--accent)]"></div>
+                <div class="w-2 h-2 bg-[var(--accent)]"></div>
+                <div class="w-2 h-2 bg-[var(--accent)]"></div>
+                <div class="w-2 h-2 bg-[var(--accent)]"></div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between border-b border-[var(--border)] pb-3">
+              <span class="text-[var(--text-secondary)]">AI Infrastructure</span>
+              <div class="flex gap-1">
+                <div class="w-2 h-2 bg-[var(--accent)]"></div>
+                <div class="w-2 h-2 bg-[var(--accent)]"></div>
+                <div class="w-2 h-2 bg-[var(--accent)]"></div>
+                <div class="w-2 h-2 bg-[var(--accent)]"></div>
+                <div class="w-2 h-2 bg-[var(--border)]"></div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between border-b border-[var(--border)] pb-3">
+              <span class="text-[var(--text-secondary)]">Full-stack Development</span>
+              <div class="flex gap-1">
+                <div class="w-2 h-2 bg-[var(--accent)]"></div>
+                <div class="w-2 h-2 bg-[var(--accent)]"></div>
+                <div class="w-2 h-2 bg-[var(--accent)]"></div>
+                <div class="w-2 h-2 bg-[var(--accent)]"></div>
+                <div class="w-2 h-2 bg-[var(--accent)]"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+
+  <!-- Decorative element -->
+  <div class="absolute bottom-20 right-20 w-40 h-40 border border-[var(--border)] opacity-20 pointer-events-none"></div>
 </section>

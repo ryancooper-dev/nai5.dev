@@ -1,16 +1,104 @@
 ---
 ---
 
-<section class="pt-20 pb-16 md:pt-32 md:pb-20 px-6">
-  <div class="max-w-4xl mx-auto">
-    <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-[var(--text-primary)] tracking-tight leading-tight">
-      Ryan Cooper
-    </h1>
-    <p class="text-xl md:text-2xl text-[var(--text-secondary)] mb-8 font-light">
-      Full-stack Engineer & AI Researcher
-    </p>
-    <p class="text-lg md:text-xl text-[var(--text-tertiary)] max-w-2xl leading-relaxed">
-      Building intelligent systems from first principles
-    </p>
+<section class="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden grid-bg">
+  <!-- Geometric decorations -->
+  <div class="absolute top-20 right-20 w-32 h-32 border-2 border-[var(--accent)] opacity-20 animate-slide-in-right delay-300"></div>
+  <div class="absolute bottom-40 left-10 w-24 h-24 border-2 border-[var(--border)] rotate-45 opacity-30 animate-slide-in-left delay-400"></div>
+
+  <!-- Yellow accent line -->
+  <div class="absolute top-0 left-0 w-1 h-64 bg-[var(--accent)] animate-slide-in-up"></div>
+
+  <div class="max-w-6xl w-full relative z-10">
+    <!-- Label -->
+    <div class="mb-8 animate-slide-in-left">
+      <span class="mono text-xs tracking-wider text-[var(--text-tertiary)] uppercase border border-[var(--border)] px-3 py-1">
+        [ Portfolio 2026 ]
+      </span>
+    </div>
+
+    <!-- Main content -->
+    <div class="space-y-8">
+      <!-- Name with geometric accent -->
+      <div class="relative">
+        <h1 class="text-6xl md:text-8xl lg:text-9xl font-bold text-[var(--text-primary)] leading-none animate-slide-in-left delay-100">
+          RYAN<br/>
+          <span class="relative inline-block">
+            COOPER
+            <div class="absolute -bottom-2 -right-2 w-4 h-4 bg-[var(--accent)]"></div>
+          </span>
+        </h1>
+      </div>
+
+      <!-- Role -->
+      <div class="flex items-center gap-4 animate-slide-in-left delay-200">
+        <div class="w-12 h-[2px] bg-[var(--accent)]"></div>
+        <p class="mono text-lg md:text-xl text-[var(--text-secondary)] uppercase tracking-wide">
+          Full-stack Engineer & AI Researcher
+        </p>
+      </div>
+
+      <!-- Description -->
+      <div class="max-w-2xl animate-slide-in-left delay-300">
+        <p class="text-xl md:text-2xl text-[var(--text-secondary)] font-light leading-relaxed">
+          Building intelligent systems from first principles.
+          <br/>
+          Specialized in <span class="text-[var(--accent)]">AI infrastructure</span> and
+          <span class="text-[var(--accent)]">system architecture</span>.
+        </p>
+      </div>
+
+      <!-- CTA -->
+      <div class="flex flex-wrap gap-4 pt-4 animate-slide-in-left delay-400">
+        <a href="#projects" class="group relative px-8 py-4 bg-[var(--accent)] text-[var(--bg-primary)] font-bold mono text-sm uppercase tracking-wider overflow-hidden hover-lift">
+          <span class="relative z-10">View Projects</span>
+          <div class="absolute inset-0 bg-[var(--accent-dim)] transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></div>
+        </a>
+        <a href="#connect" class="px-8 py-4 border-2 border-[var(--border)] text-[var(--text-primary)] font-bold mono text-sm uppercase tracking-wider hover:border-[var(--accent)] transition-colors hover-lift">
+          Contact
+        </a>
+      </div>
+
+      <!-- Stats bar -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 border-t border-[var(--border)] animate-slide-in-up delay-500">
+        <div class="space-y-2">
+          <div class="mono text-3xl font-bold text-[var(--accent)]">5+</div>
+          <div class="text-sm text-[var(--text-tertiary)] uppercase tracking-wide">Years Experience</div>
+        </div>
+        <div class="space-y-2">
+          <div class="mono text-3xl font-bold text-[var(--accent)]">10+</div>
+          <div class="text-sm text-[var(--text-tertiary)] uppercase tracking-wide">Projects Shipped</div>
+        </div>
+        <div class="space-y-2">
+          <div class="mono text-3xl font-bold text-[var(--accent)]">3</div>
+          <div class="text-sm text-[var(--text-tertiary)] uppercase tracking-wide">Core Languages</div>
+        </div>
+        <div class="space-y-2">
+          <div class="mono text-3xl font-bold text-[var(--accent)]">∞</div>
+          <div class="text-sm text-[var(--text-tertiary)] uppercase tracking-wide">Problems Solved</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-slide-in-up delay-700">
+    <div class="flex flex-col items-center gap-2 text-[var(--text-tertiary)]">
+      <span class="mono text-xs uppercase tracking-wider">Scroll</span>
+      <div class="w-[1px] h-12 bg-[var(--text-tertiary)] relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-4 bg-[var(--accent)]" style="animation: slideDown 2s ease-in-out infinite;"></div>
+      </div>
+    </div>
   </div>
 </section>
+
+<style>
+  @keyframes slideDown {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(300%);
+    }
+  }
+</style>

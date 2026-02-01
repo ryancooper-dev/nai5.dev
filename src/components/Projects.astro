@@ -1,45 +1,158 @@
 ---
 ---
 
-<section id="projects" class="py-16 md:py-24 px-6">
-  <div class="max-w-4xl mx-auto">
-    <h2 class="text-3xl md:text-4xl font-bold mb-10 text-[var(--text-primary)] tracking-tight">
-      Projects
-    </h2>
-
-    <div class="space-y-6">
-      <!-- Sake -->
-      <div class="group p-6 bg-[var(--bg-elevated)] border border-[var(--border-subtle)] rounded-xl hover:border-[var(--accent)] transition-all">
-        <h3 class="text-xl font-semibold text-[var(--text-primary)] mb-3 flex items-center gap-2">
-          <span class="text-2xl">🍶</span>
-          Sake
-        </h3>
-        <p class="text-base text-[var(--text-secondary)] mb-4 leading-relaxed">
-          A lightweight web framework for Navi.
-        </p>
-        <div class="flex gap-4 text-sm">
-          <a href="https://ryancooper-dev.github.io/sake-navi/" target="_blank" class="text-[var(--accent)] hover:text-[var(--accent-hover)] font-medium transition-colors">
-            Docs →
-          </a>
-          <a href="https://github.com/ryancooper-dev/sake-navi" target="_blank" class="text-[var(--accent)] hover:text-[var(--accent-hover)] font-medium transition-colors">
-            GitHub →
-          </a>
-        </div>
+<section id="projects" class="relative py-32 px-6 border-t border-[var(--border)] bg-[var(--bg-secondary)]">
+  <div class="max-w-6xl mx-auto">
+    <!-- Section header -->
+    <div class="mb-20">
+      <div class="flex items-center gap-6 mb-6">
+        <span class="mono text-sm text-[var(--accent)] uppercase tracking-wider">[02]</span>
+        <h2 class="text-5xl md:text-6xl font-bold text-[var(--text-primary)]">PROJECTS</h2>
       </div>
+      <div class="h-[2px] w-24 bg-[var(--accent)]"></div>
+    </div>
 
-      <!-- Agentries -->
-      <div class="group p-6 bg-[var(--bg-elevated)] border border-[var(--border-subtle)] rounded-xl hover:border-[var(--border-default)] transition-all">
-        <div class="flex items-center gap-2 mb-3">
-          <h3 class="text-xl font-semibold text-[var(--text-primary)] flex items-center gap-2">
-            <span class="text-2xl">🤖</span>
-            Agentries
-          </h3>
-          <span class="text-xs px-2 py-1 bg-[var(--bg-secondary)] border border-[var(--border-subtle)] rounded text-[var(--text-tertiary)]">Private</span>
+    <div class="space-y-12">
+      <!-- Sake Project -->
+      <article class="group relative border-2 border-[var(--border)] bg-[var(--bg-primary)] hover:border-[var(--accent)] transition-all duration-500">
+        <!-- Project number -->
+        <div class="absolute -top-6 -left-6 w-12 h-12 bg-[var(--accent)] flex items-center justify-center">
+          <span class="mono text-2xl font-bold text-[var(--bg-primary)]">01</span>
         </div>
-        <p class="text-base text-[var(--text-secondary)] leading-relaxed">
-          AI agent infrastructure in Rust.
-        </p>
-      </div>
+
+        <div class="p-8 md:p-12">
+          <div class="grid md:grid-cols-2 gap-12">
+            <!-- Left: Info -->
+            <div class="space-y-6">
+              <div>
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-4xl">🍶</span>
+                  <h3 class="text-3xl md:text-4xl font-bold text-[var(--text-primary)]">SAKE</h3>
+                </div>
+                <div class="mono text-xs text-[var(--accent)] uppercase tracking-wider mb-4">Web Framework</div>
+                <p class="text-lg text-[var(--text-secondary)] leading-relaxed">
+                  A lightweight, high-performance web framework for Navi.
+                  Built with simplicity and speed in mind, handling 45,000+ requests per second.
+                </p>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="mono text-xs px-3 py-1 border border-[var(--border)] text-[var(--text-tertiary)]">Navi</span>
+                <span class="mono text-xs px-3 py-1 border border-[var(--border)] text-[var(--text-tertiary)]">Web Framework</span>
+                <span class="mono text-xs px-3 py-1 border border-[var(--border)] text-[var(--text-tertiary)]">High Performance</span>
+              </div>
+            </div>
+
+            <!-- Right: Links -->
+            <div class="flex flex-col justify-between">
+              <div class="space-y-4">
+                <div class="mono text-sm text-[var(--text-tertiary)] uppercase tracking-wider">Status</div>
+                <div class="flex items-center gap-3">
+                  <div class="relative w-3 h-3">
+                    <div class="absolute inset-0 bg-[var(--accent)] rounded-full animate-ping opacity-75"></div>
+                    <div class="relative w-3 h-3 bg-[var(--accent)] rounded-full"></div>
+                  </div>
+                  <span class="text-[var(--text-secondary)]">Active Development</span>
+                </div>
+              </div>
+
+              <div class="flex flex-col gap-3 mt-8">
+                <a href="https://ryancooper-dev.github.io/sake-navi/" target="_blank"
+                   class="group/link flex items-center justify-between px-6 py-4 border-2 border-[var(--border)] hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--bg-primary)] transition-all">
+                  <span class="mono text-sm font-bold uppercase">View Documentation</span>
+                  <svg class="w-5 h-5 transform group-hover/link:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                  </svg>
+                </a>
+                <a href="https://github.com/ryancooper-dev/sake-navi" target="_blank"
+                   class="group/link flex items-center justify-between px-6 py-4 border-2 border-[var(--border)] hover:border-[var(--accent)] hover:bg-[var(--accent)] hover:text-[var(--bg-primary)] transition-all">
+                  <span class="mono text-sm font-bold uppercase">View on GitHub</span>
+                  <svg class="w-5 h-5 transform group-hover/link:translate-x-2 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Corner accent -->
+        <div class="absolute -bottom-2 -right-2 w-8 h-8 border-2 border-[var(--accent)] bg-[var(--bg-primary)] group-hover:w-12 group-hover:h-12 transition-all duration-500"></div>
+      </article>
+
+      <!-- Agentries Project -->
+      <article class="group relative border-2 border-[var(--border)] bg-[var(--bg-primary)] hover:border-[var(--border)] transition-all duration-500 opacity-75">
+        <!-- Project number -->
+        <div class="absolute -top-6 -left-6 w-12 h-12 bg-[var(--text-tertiary)] flex items-center justify-center">
+          <span class="mono text-2xl font-bold text-[var(--bg-primary)]">02</span>
+        </div>
+
+        <div class="p-8 md:p-12">
+          <div class="grid md:grid-cols-2 gap-12">
+            <!-- Left: Info -->
+            <div class="space-y-6">
+              <div>
+                <div class="flex items-center gap-3 mb-4">
+                  <span class="text-4xl">🤖</span>
+                  <h3 class="text-3xl md:text-4xl font-bold text-[var(--text-primary)]">AGENTRIES</h3>
+                  <span class="mono text-xs px-3 py-1 bg-[var(--bg-tertiary)] border border-[var(--border)] text-[var(--text-tertiary)]">PRIVATE</span>
+                </div>
+                <div class="mono text-xs text-[var(--text-tertiary)] uppercase tracking-wider mb-4">AI Infrastructure</div>
+                <p class="text-lg text-[var(--text-secondary)] leading-relaxed">
+                  Enterprise-grade AI agent infrastructure built in Rust.
+                  Designed for reliability, performance, and scalability in production environments.
+                </p>
+              </div>
+
+              <div class="flex flex-wrap gap-2">
+                <span class="mono text-xs px-3 py-1 border border-[var(--border)] text-[var(--text-tertiary)]">Rust</span>
+                <span class="mono text-xs px-3 py-1 border border-[var(--border)] text-[var(--text-tertiary)]">AI Agents</span>
+                <span class="mono text-xs px-3 py-1 border border-[var(--border)] text-[var(--text-tertiary)]">Infrastructure</span>
+              </div>
+            </div>
+
+            <!-- Right: Status -->
+            <div class="flex flex-col justify-between">
+              <div class="space-y-4">
+                <div class="mono text-sm text-[var(--text-tertiary)] uppercase tracking-wider">Status</div>
+                <div class="flex items-center gap-3">
+                  <div class="w-3 h-3 bg-[var(--text-tertiary)] rounded-full"></div>
+                  <span class="text-[var(--text-secondary)]">Private Development</span>
+                </div>
+              </div>
+
+              <div class="mt-8 p-6 border border-[var(--border)] bg-[var(--bg-tertiary)]">
+                <p class="mono text-sm text-[var(--text-tertiary)]">
+                  This project is currently in private development.
+                  Details will be shared upon public release.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- Decorative grid -->
+  <div class="absolute top-40 left-10 w-32 h-32 opacity-10 pointer-events-none">
+    <div class="grid grid-cols-4 gap-2 h-full">
+      <div class="bg-[var(--accent)]"></div>
+      <div class="bg-[var(--border)]"></div>
+      <div class="bg-[var(--border)]"></div>
+      <div class="bg-[var(--border)]"></div>
+      <div class="bg-[var(--border)]"></div>
+      <div class="bg-[var(--accent)]"></div>
+      <div class="bg-[var(--border)]"></div>
+      <div class="bg-[var(--border)]"></div>
+      <div class="bg-[var(--border)]"></div>
+      <div class="bg-[var(--border)]"></div>
+      <div class="bg-[var(--accent)]"></div>
+      <div class="bg-[var(--border)]"></div>
+      <div class="bg-[var(--border)]"></div>
+      <div class="bg-[var(--border)]"></div>
+      <div class="bg-[var(--border)]"></div>
+      <div class="bg-[var(--accent)]"></div>
     </div>
   </div>
 </section>
